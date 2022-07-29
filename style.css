@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --primary-color: hsl(358, 75%, 54%);
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+}
+header {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+main img {
+  transition: transform 150ms;
+  min-width: 1.5rem;
+}
+
+#galera:hover {
+  transform: scale(1.1);
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo img {
+  height: 10rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+}
+nav ul a {
+  display: flex;
+
+  text-decoration: none;
+  list-style: none;
+}
+nav ul a + a + a {
+  margin-right: 3rem;
+}
+
+nav ul a img {
+  height: 5rem;
+}
+nav ul a img:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-weight: normal;
+  margin: 5rem 0 5rem;
+  letter-spacing: 0.5rem;
+  font-size: 5rem;
+}
+h1 span {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+main {
+  max-width: 100rem;
+  padding: 0 5rem;
+
+  text-align: center;
+  margin: 0 auto 5rem;
+}
+#gptw {
+  margin-top: 5rem;
+}
+#pum {
+  margin-bottom: 5rem;
+  line-height: 2.3rem;
+}
+main img {
+  height: 15rem;
+
+  margin-bottom: 5rem;
+  border-radius: 0.5rem;
+}
+main img + img {
+  height: 15rem;
+  margin: 2rem;
+}
+
+#contato {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+#contato img {
+  height: 4rem;
+}
+
+#contato img:hover {
+  transform: scale(1.1);
+}
+#banner {
+  height: 15vw;
+  width: 100vw;
+  display: flex;
+  margin: 5rem auto 5rem;
+}
+
+@media (width: 500px) {
+  main div {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}
